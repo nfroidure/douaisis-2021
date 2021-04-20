@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="279.13545"
-     inkscape:cy="247.36293"
+     inkscape:zoom="3.959798"
+     inkscape:cx="663.10456"
+     inkscape:cy="226.17475"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -342,11 +342,10 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.87797737px;line-height:125%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458323px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 182.61412,252.1519 q -0.0705,0 -0.0764,-0.0647 l -0.0941,-0.56428 q 0,-0.0294 -0.0353,-0.0294 h -0.74651 q -0.0353,0 -0.0353,0.0294 l -0.0941,0.56428 q -0.006,0.0647 -0.0764,0.0647 h -0.68772 q -0.0764,0 -0.0588,-0.0764 l 0.86406,-3.97352 q 0.0118,-0.0647 0.0764,-0.0647 h 0.79352 q 0.0647,0 0.0764,0.0647 l 0.85818,3.97352 0.006,0.0235 q 0,0.0529 -0.0647,0.0529 z m -0.86994,-1.32842 q 0,0.0294 0.0235,0.0294 h 0.52901 q 0.0294,0 0.0235,-0.0294 l -0.27627,-1.60469 q -0.006,-0.0176 -0.0176,-0.0176 -0.0118,0 -0.0176,0.0176 z" />
     <path
-       sodipodi:nodetypes="scssssscsssss"
        inkscape:connector-curvature="0"
-       id="path1052"
+       id="path1075-3"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.87797737px;line-height:125%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458323px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 183.67214,252.1519 c -0.0196,0 -0.0372,-0.006 -0.0529,-0.0176 -0.0117,-0.0157 -0.0176,-0.0333 -0.0176,-0.0529 v -2.88021 c 0,-0.0196 0.006,-0.0353 0.0176,-0.047 0.0157,-0.0157 0.0333,-0.0235 0.0529,-0.0235 h 0.68773 c 0.0196,0 0.0353,0.008 0.047,0.0235 0.0157,0.0117 0.0235,0.0274 0.0235,0.047 v 2.88021 c 0,0.0196 -0.008,0.0372 -0.0235,0.0529 -0.0117,0.0117 -0.0274,0.0176 -0.047,0.0176 z" />
+       d="m 184.06009,248.8073 q -0.19985,0 -0.33505,-0.12932 -0.12931,-0.13519 -0.12931,-0.33504 0,-0.20573 0.12931,-0.33505 0.12932,-0.12931 0.33505,-0.12931 0.20573,0 0.32916,0.12931 0.12932,0.12932 0.12932,0.33505 0,0.19985 -0.12932,0.33504 -0.12931,0.12932 -0.32916,0.12932 z m -0.33505,3.3622 q -0.0294,0 -0.0529,-0.0176 -0.0176,-0.0235 -0.0176,-0.0529 v -2.88021 q 0,-0.0294 0.0176,-0.047 0.0235,-0.0235 0.0529,-0.0235 h 0.68773 q 0.0294,0 0.047,0.0235 0.0235,0.0176 0.0235,0.047 v 2.88021 q 0,0.0294 -0.0235,0.0529 -0.0176,0.0176 -0.047,0.0176 z" />
     <path
        inkscape:connector-curvature="0"
        id="path1054"
