@@ -14,6 +14,7 @@ import UnorderedList from "../components/ul";
 import Strong from "../components/strong";
 import Emphasis from "../components/em";
 import Cite from "../components/cite";
+import { publicRuntimeConfig } from "../utils/config";
 import { fixText } from "./text";
 
 type ElementMap = (
@@ -62,7 +63,10 @@ const hrMap: ElementMap = (_, index) => <HorizontalRule key={index} />;
 const embeddedAssetMap: ElementMap = ({ illustration }, index) => {
   return (
     <Paragraph key={index}>
-      <img src={"https:" + illustration.href} alt={illustration.alt} />
+      <img
+        src={`${publicRuntimeConfig.buildPrefix}/${illustration.href}`}
+        alt={illustration.alt}
+      />
       <style jsx>{`
         img {
           clear: both;

@@ -5,8 +5,8 @@ import Heading2 from "../../components/h2";
 import Paragraph from "../../components/p";
 import Anchor from "../../components/a";
 import { reshapeIllustrations } from "../../utils/contentful";
-import axios from "axios";
-import { toASCIIString } from "../../utils/ascii";
+import { readFileSync } from "fs";
+import { publicRuntimeConfig } from "../../utils/config";
 import { CSS_BREAKPOINT_START_L } from "../../utils/constants";
 
 export type News = {
@@ -44,7 +44,7 @@ const Page = ({ news }: Props) => (
             <Paragraph className="news_illustration">
               <Anchor href={`/actualites/${aNews.id}`}>
                 <img
-                  src={"http:" + aNews.illustration.href}
+                  src={`${publicRuntimeConfig.buildPrefix}/${aNews.illustration.href}`}
                   alt={aNews.illustration.alt}
                 />
               </Anchor>
@@ -106,33 +106,7 @@ const Page = ({ news }: Props) => (
 );
 
 export const getStaticProps = async () => {
-  const response = await axios({
-    method: "get",
-    url: `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master/entries?content_type=news_campaign`,
-    headers: {
-      referer: "Web Site Syncer",
-    },
-    params: {
-      access_token: process.env.CONTENTFUL_API_TOKEN,
-    },
-  });
-
-  const news = response.data.items
-    .map((item: any) => ({
-      id: toASCIIString(item.fields.title),
-      title: item.fields.title,
-      date: item.fields.date,
-      description: item.fields.description,
-      author: item.fields.author || "",
-      content: (item.fields.content ? [item.fields.content] : []).map(buildAssets.bind(null, response.data))[0],
-      illustration: reshapeIllustrations(
-        item.fields.illustration ? [item.fields.illustration] : [],
-        response.data
-      )[0],
-    }))
-    .sort(({ date: dateA }: any, { date: dateB }: any) =>
-      new Date(dateA).getTime() > new Date(dateB).getTime() ? -1 : 1
-    );
+  const news = JSON.parse(readFileSync("./data/news").toString());
 
   return { props: { news } as Props };
 };
@@ -147,7 +121,10 @@ export function buildAssets(
     ? {
         ...props,
         nodeType,
-        illustration: reshapeIllustrations([props.data.target], contentfulData)[0],
+        illustration: reshapeIllustrations(
+          [props.data.target],
+          contentfulData
+        )[0],
       }
     : {
         ...props,

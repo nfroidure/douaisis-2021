@@ -127,7 +127,15 @@ const Page = () => (
         </ListItem>
         <ListItem>photos&nbsp;: Yvon Brenienek</ListItem>
         <ListItem>hébergeur&nbsp;: GitHub Pages</ListItem>
-        <ListItem>développeur&nbsp;: Nicolas Froidure</ListItem>
+        <ListItem>
+          développeur&nbsp;:{" "}
+          <a
+            href="https://nicolasfroidure.fr"
+            title="Visiter le site de Nicolas Froidure"
+          >
+            Nicolas Froidure
+          </a>
+        </ListItem>
       </UnorderedList>
     </ContentBlock>
   </Layout>

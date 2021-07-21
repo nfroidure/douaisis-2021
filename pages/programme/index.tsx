@@ -4,12 +4,11 @@ import Heading1 from "../../components/h1";
 import Heading2 from "../../components/h2";
 import Paragraph from "../../components/p";
 import Anchor from "../../components/a";
-import { reshapeIllustrations } from "../../utils/contentful";
-import axios from "axios";
-import { toASCIIString } from "../../utils/ascii";
 import UnorderedList from "../../components/ul";
 import ListItem from "../../components/li";
+import { readFileSync } from "fs";
 import { CSS_BREAKPOINT_START_L } from "../../utils/constants";
+import { publicRuntimeConfig } from "../../utils/config";
 
 export type Article = {
   id: string;
@@ -64,7 +63,7 @@ const Page = ({ articles }: Props) => (
           <Paragraph className="photo">
             <Anchor href={`/programme/${article.id}`}>
               <img
-                src={"https:" + article.illustration.href}
+                src={`${publicRuntimeConfig.buildPrefix}/${article.illustration.href}`}
                 alt={article.illustration.alt}
               />
             </Anchor>
@@ -114,33 +113,7 @@ const Page = ({ articles }: Props) => (
 );
 
 export const getStaticProps = async () => {
-  const response = await axios({
-    method: "get",
-    url: `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master/entries?content_type=article`,
-    headers: {
-      referer: "Web Site Syncer",
-    },
-    params: {
-      access_token: process.env.CONTENTFUL_API_TOKEN,
-    },
-  });
-
-  const articles = response.data.items
-    .map((item: any) => ({
-      id: toASCIIString(item.fields.title),
-      title: item.fields.title,
-      titreCourt: item.fields.titreCourt,
-      ordre: item.fields.ordre,
-      description: item.fields.description,
-      content: item.fields.content,
-      illustration: reshapeIllustrations(
-        item.fields.illustration ? [item.fields.illustration] : [],
-        response.data
-      )[0],
-    }))
-    .sort(({ ordre: orderA }: any, { ordre: orderB }: any) =>
-      orderA > orderB ? 1 : -1
-    );
+  const articles = JSON.parse(readFileSync("./data/articles").toString());
 
   return { props: { articles } as Props };
 };

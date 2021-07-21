@@ -4,11 +4,10 @@ import Heading1 from "../../components/h1";
 import Heading2 from "../../components/h2";
 import Paragraph from "../../components/p";
 import Anchor from "../../components/a";
-import { reshapeIllustrations } from "../../utils/contentful";
-import axios from "axios";
-import { toASCIIString } from "../../utils/ascii";
+import { readFileSync } from "fs";
 import { CSS_BREAKPOINT_START_L } from "../../utils/constants";
 import Strong from "../../components/strong";
+import { publicRuntimeConfig } from "../../utils/config";
 
 export type Candidate = {
   id: string;
@@ -58,7 +57,7 @@ const Page = ({ candidates }: Props) => (
           <Paragraph className="photo">
             <Anchor href={`/candidat-es/${candidate.id}`}>
               <img
-                src={"https:" + candidate.photo.href}
+                src={`${publicRuntimeConfig.buildPrefix}/${candidate.photo.href}`}
                 alt={candidate.photo.alt}
                 width={167}
                 height={250}
@@ -115,37 +114,7 @@ const Page = ({ candidates }: Props) => (
 );
 
 export const getStaticProps = async () => {
-  const response = await axios({
-    method: "get",
-    url: `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master/entries?content_type=candidates`,
-    headers: {
-      referer: "Web Site Syncer",
-    },
-    params: {
-      access_token: process.env.CONTENTFUL_API_TOKEN,
-    },
-  });
-  const candidates = response.data.items
-    .map((item: any) => ({
-      id: toASCIIString(item.fields.fullName),
-      fullName: item.fields.fullName,
-      metier: item.fields.metier,
-      parti: item.fields.parti,
-      mandat: item.fields.mandat || "",
-      bio: item.fields.bio,
-      order: item.fields.order,
-      engagement: item.fields.engagement,
-      union: item.fields.union,
-      citation: item.fields.citation,
-      type: item.fields.type,
-      photo: reshapeIllustrations(
-        item.fields.photo ? [item.fields.photo] : [],
-        response.data
-      )[0],
-    }))
-    .sort(({ order: orderA }: any, { order: orderB }: any) =>
-      orderA > orderB ? 1 : -1
-    );
+  const candidates = JSON.parse(readFileSync("./data/candidates").toString());
 
   return { props: { candidates } as Props };
 };

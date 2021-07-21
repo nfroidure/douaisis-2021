@@ -6,8 +6,7 @@ import Heading1 from "../components/h1";
 import Heading2 from "../components/h2";
 import Strong from "../components/strong";
 import { mapNodesToElements } from "../utils/contentful";
-import { toASCIIString } from "../utils/ascii";
-import axios from "axios";
+import { readFileSync } from "fs";
 import { fixText } from "../utils/text";
 import { publicRuntimeConfig } from "../utils/config";
 
@@ -21,8 +20,10 @@ type Props = {
 };
 
 const Page = ({ questions }: Props) => (
-  <Layout title="La FAQ"
-  image={`${publicRuntimeConfig.buildPrefix}/images/la-faq.png`}>
+  <Layout
+    title="La FAQ"
+    image={`${publicRuntimeConfig.buildPrefix}/images/la-faq.png`}
+  >
     <ContentBlock>
       <Heading1>La FAQ</Heading1>
       <Paragraph>
@@ -50,26 +51,7 @@ const Page = ({ questions }: Props) => (
 );
 
 export const getStaticProps = async () => {
-  const response = await axios({
-    method: "get",
-    url: `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master/entries?content_type=faq`,
-    headers: {
-      referer: "Web Site Syncer",
-    },
-    params: {
-      access_token: process.env.CONTENTFUL_API_TOKEN,
-    },
-  });
-  const questions = response.data.items
-    .map((item: any) => ({
-      id: toASCIIString(item.fields.question),
-      order: item.fields.order,
-      question: item.fields.question,
-      answer: item.fields.answer,
-    }))
-    .sort(({ order: orderA }: any, { order: orderB }: any) =>
-      orderA > orderB ? 1 : -1
-    );
+  const questions = JSON.parse(readFileSync("./data/questions").toString());
 
   return { props: { questions } as Props };
 };

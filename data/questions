@@ -1,0 +1,639 @@
+[
+  {
+    "id": "quelles-sont-les-competences-du-departement",
+    "order": 1,
+    "question": "Quelles sont les compétences du département ?",
+    "answer": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Le département a de nombreuses compétences parmi lesquelles :",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "l’enfance : aide sociale à l’enfance (ASE), protection maternelle et infantile (PMI), adoption, soutien aux familles en difficulté financière,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "le handicap : politiques d’hébergement et d’insertion sociale, prestation de compensation du handicap (PCH, loi du 11 février 2005), maisons départementales des personnes handicapées (MDPH),",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "les personnes agées : création et gestion de maisons de retraite, politique de maintien des personnes âgées à domicile,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "l’aide sociale : gestion du revenu de solidarité active (RSA), dont le montant est fixé au niveau national,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "la construction, l’entretien et l’équipement des collèges,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "l’équipement rural, le remembrement, l’aménagement foncier, la gestion de l’eau et de la voirie rurale,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "les services de transport spécial des élèves handicapés vers les établissements scolaires,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "la gestion de la voirie départementale,",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "la création et la gestion des bibliothèques de prêt, des services d’archives, de musées, protection du patrimoine...",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  },
+  {
+    "id": "la-droite-a-t-elle-bien-gere-le-nord",
+    "order": 2,
+    "question": " La droite a-t-elle bien géré le Nord ?",
+    "answer": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "On se souvient du refrain entonné par la droite départementale et son premier vice-président chargé des finances, Christian Poiret en 2015 lors de leur arrivée aux manettes du conseil départemental du Nord :\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "value": "« Au cours de ce mandat, nous allons sortir le département de la mauvaise passe dans laquelle la gestion de gauche l’a placée, mettre fin à la gabegie dans le personnel, au laxisme dans les aides à la personne, redresser les finances et réduire la dette. ».",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Malgré un effort obstiné de réduction du rôle de protection sociale du département passant par la stigmatisation des ayant-droits et une volonté soutenue de mettre au pas le personnel, ces deux postes n’ont pas baissé et ont même augmenté.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "La dette a, elle, en revanche été réduite. Elle est passée de 1401 M € en 2014 à 1182 en 2019, soit une baisse de 44 M € par an. Voilà quand même un résultat positif à mettre au crédit de la droite, pensera-t-on, et une bonne nouvelle pour les impôts des Nordistes.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Sauf que ces 44 M €, ce sont justement les Nordistes qui les ont payés, et très largement, avec leurs impôts fonciers. La droite prélève 118 M € de plus par an (+32%), 488 M € en 2019 contre 370 en 2014 !",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "À ce compte, les Nordistes sont les perdants de la gestion de la droite.\nEt ce n’est pas fini !",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Le rôle du Conseil départemental est d’équiper le territoire au bénéfice de ses habitants : construction ou rénovation de voiries, création de pistes cyclables, d’aires de covoiturage, construction de logements sociaux, etc. La droite a fait chuter les dépenses d’équipement de 29% (220 M € en 2019 contre 311 en 2014). Au contraire, les six départements de taille comparable ont fait croître cette dépense au cours du mandat et ont équipé leurs territoires deux fois et demi plus que le Nord. (205 € par habitant contre 84).",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Rectifions donc les paroles du refrain de la droite : ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "value": "« Au cours d’une année pendant ce mandat, nous avons pris 118 M € d’impôts supplémentaires aux Nordistes ; nous leur avons offert 91 M € de moins d’équipements divers et malgré ces 209 M € nous n’avons fait baisser la dette que de 44 M €. ».",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Source : ",
+              "nodeType": "text"
+            },
+            {
+              "data": {
+                "uri": "https://www.impots.gouv.fr/cll/zf1/accueil/flux.ex"
+              },
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "Ministère de l’Action et des Comptes publics ; Les comptes des départements",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "hyperlink"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  },
+  {
+    "id": "l-emploi-local--communication-et-verite",
+    "order": 3,
+    "question": "L’emploi local, communication et vérité",
+    "answer": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "On a déjà vu avec la gestion du département  (voir Question : La droite a-t-elle bien géré le Nord ?) que Christian Poiret était un adepte convaincu de la communication mais qu’hélas, il ne mettait pas toujours celle-ci au service de la vérité. Qu’en est-il pour un de ses discours favoris : les progrès de l’emploi sur le territoire.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Il s’appuie généralement sur l’installation du parc logistique de Lauwin-Planque pour souligner le dynamisme du territoire. Il faut convenir que ce secteur est véritablement porteur d’emplois. Si on compare les derniers chiffres de l’INSEE avec ceux de 2009 (première année de présidence de la CAD pour C. Poiret), Lauwin-Planque offre 2582 emplois de plus (2920 contre 338).",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Mais Lauwin-Planque est l’arbre qui cache la forêt. Le canton de Douai a beau être la partie la plus dynamique de Douaisis Agglo (avec Douai, Cuincy, Flers et désormais Lauwin-Planque), il offre moins d’emplois maintenant qu’en 2009 (- 369). Cela est vrai aussi pour l’ensemble de Douaisis Agglo (- 911).",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Quoi qu’en dise la communication, la vérité est que le canton de Douai et le territoire de Douaisis Agglo offrent moins d’emplois désormais que lors de l’arrivée de C. Poiret à la présidence de l’agglomération.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Mais les habitants du canton savent aussi que ce n’est pas parce qu’ils habitent près de Carrefour à Flers, près d’Amazon à Lauwin-Planque, de Renault à Cuincy ou du tribunal à Douai qu’ils y sont employés. Si l’on se préoccupe non pas des emplois offerts sur le territoire mais du nombre d’actifs employés, la vérité reste sombre.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Les actifs employés sont moins nombreux qu’en 2009 : - 1878 pour le canton (- 1970 pour Douaisis Agglo) et les chômeurs plus nombreux : 598 de plus pour le canton (1347 pour Douaisis Agglo). Les trompettes de la vérité sont malheureusement bien mal embouchées !",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Source : ",
+              "nodeType": "text"
+            },
+            {
+              "data": {
+                "uri": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-59334"
+              },
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "INSEE Statistiques et études Dossier Complet",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "hyperlink"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  },
+  {
+    "id": "une-personne-dit-etre-bannie-de-la-page-facebook---twitter",
+    "order": 5,
+    "question": "Une personne dit être bannie de la page Facebook / Twitter ?",
+    "answer": {
+      "nodeType": "document",
+      "data": {},
+      "content": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "C'est possible, si tel est le cas, voici les différents cas de figure :",
+              "marks": [],
+              "data": {}
+            }
+          ],
+          "data": {}
+        },
+        {
+          "nodeType": "unordered-list",
+          "content": [
+            {
+              "nodeType": "list-item",
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "des insultes, menaces ou propos tendancieux et/ou incohérents on été formulés, dans ce cas, ils ont été supprimés et la personne bannie,",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            },
+            {
+              "nodeType": "list-item",
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "des actions négatives répétées, de nature à provoquer le désordre dans les différents débats / commentaires ont été relevés,",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            },
+            {
+              "nodeType": "list-item",
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "du spam pour obtenir de la visibilité sur le compte de notre campagne a été détecté,",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            },
+            {
+              "nodeType": "list-item",
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "des propos de nature à engager notre responsabilités ont été tenus.",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            }
+          ],
+          "data": {}
+        },
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Ce n'est jamais une décision facile de bannir quelqu'un⋅e, mais notre objectif premier est d'informer les personnes en droit de voter de notre programme et de répondre à leurs questions.",
+              "marks": [],
+              "data": {}
+            }
+          ],
+          "data": {}
+        },
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Chacun⋅e reste, bien sûr, libre de poster et d'engager sa propre responsabilité sur son compte personnel, nos publications restent partageables par toutes et tous. La démocratie est donc respectée, même si l'audience ne sera pas forcément au rendez-vous 😉.",
+              "marks": [],
+              "data": {}
+            }
+          ],
+          "data": {}
+        }
+      ]
+    }
+  },
+  {
+    "id": "la-fi-presente-t-elle-pour-la-premiere-fois-des-candidat-e-s-dans-notre-canton-comme-le-dit-la-presse",
+    "order": 6,
+    "question": "La FI présente-t-elle pour la première fois des candidat⋅e⋅s dans notre canton comme le dit la presse ?",
+    "answer": {
+      "nodeType": "document",
+      "data": {},
+      "content": [
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Oui et non.\n\nOui puisque la France Insoumise n'a pris ce nom qu'en 2016.",
+              "marks": [],
+              "data": {}
+            }
+          ],
+          "data": {}
+        },
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Non parce qu'elle est l'émanation du Parti de Gauche qui a obtenu 4,29 % des voix en mars 2015.",
+              "marks": [],
+              "data": {}
+            }
+          ],
+          "data": {}
+        },
+        {
+          "nodeType": "paragraph",
+          "content": [
+            {
+              "nodeType": "text",
+              "value": "Depuis, leur candidat, Francois Guiffard, est devenu vice-président de Christian Poiret à la Communauté d'Agglomération après avoir tenté, en vain, de devenir maire de Douai à la tête d'une liste dont la No 2 (Anissa Bouchaboun) a rejoint la LRem et la No 4 (Nina Debail) est candidate aux départementales avec le maire de Lauwin-Planque sortant, chef de file de la droite dans le Nord.",
+              "marks": [],
+              "data": {}
+            }
+          ],
+          "data": {}
+        }
+      ]
+    }
+  }
+]

@@ -1,14 +1,12 @@
 import Layout from "../layouts/main";
 import ContentBlock from "../components/contentBlock";
-import axios from "axios";
+import { readFileSync } from "fs";
 import Heading1 from "../components/h1";
 import Heading2 from "../components/h2";
 import Paragraph from "../components/p";
 import Strong from "../components/strong";
 import Anchor from "../components/a";
 import Anchored from "../components/anchored";
-import { toASCIIString } from "../utils/ascii";
-import { reshapeIllustrations } from "../utils/contentful";
 import { useContext } from "react";
 import { GridContext } from "../contexts/grid";
 import { CSS_BREAKPOINT_START_L } from "../utils/constants";
@@ -172,7 +170,8 @@ const Page = ({ supporters }: Props) => {
             title="Compléter le formulaire de signature"
           >
             Je signe l'appel
-          </Anchor> pour un Nord écologique et solidaire&nbsp;!
+          </Anchor>{" "}
+          pour un Nord écologique et solidaire&nbsp;!
         </Paragraph>
       </ContentBlock>
       <style jsx>{`
@@ -225,36 +224,8 @@ const Page = ({ supporters }: Props) => {
   );
 };
 
-export const getStaticProps = async ({ limit = -1, vipOnly = false } = {}) => {
-  const response = await axios({
-    method: "get",
-    url: `https://cdn.contentful.com/spaces/${
-      process.env.CONTENTFUL_SPACE_ID
-    }/environments/master/entries?content_type=soutiens${
-      limit !== -1 ? `&limit=${limit}` : ""
-    }${vipOnly ? "&fields.vip=true" : ""}`,
-    headers: {
-      referer: "Web Site Syncer",
-    },
-    params: {
-      access_token: process.env.CONTENTFUL_API_TOKEN,
-    },
-  });
-  const supporters = response.data.items.map((item: any) => ({
-    id: toASCIIString(item.fields.fullName),
-    fullName: item.fields.fullName,
-    citation: item.fields.citation,
-    city: item.fields.city || "",
-    quote: item.fields.quote,
-    role: item.fields.role || "",
-    vip: item.fields.vip,
-    photo:
-      reshapeIllustrations(
-        item.fields.photo ? [item.fields.photo] : [],
-        response.data
-      )[0] || {},
-  }));
-  // .filter(({ vip }) => vip);
+export const getStaticProps = async () => {
+  const supporters = JSON.parse(readFileSync("./data/supporters").toString());
 
   return { props: { supporters } as Props };
 };

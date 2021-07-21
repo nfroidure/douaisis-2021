@@ -10,6 +10,7 @@ import { mapNodesToElements } from "../../utils/contentful";
 import type { Article } from ".";
 import type { GetStaticProps, GetStaticPaths } from "next";
 import { fixText } from "../../utils/text";
+import { publicRuntimeConfig } from "../../utils/config";
 
 type Params = {
   id: string;
@@ -29,7 +30,7 @@ const StaticPropsDetail = ({ article }: Props) => {
         <Heading1>{fixText(article.title)}</Heading1>
         <Paragraph className="photo">
           <img
-            src={"https:" + article.illustration.href}
+            src={`${publicRuntimeConfig.buildPrefix}/${article.illustration.href}`}
             alt={article.illustration.alt}
           />
         </Paragraph>

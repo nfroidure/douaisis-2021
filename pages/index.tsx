@@ -64,9 +64,7 @@ const Page = ({ supporters }: SupportersProps) => {
           </Anchor>
           .
         </Paragraph>
-        <Paragraph>
-          Nous vous tiendrons informé⋅es de son issue.
-        </Paragraph>
+        <Paragraph>Nous vous tiendrons informé⋅es de son issue.</Paragraph>
         <Heading2>Notre socle est commun</Heading2>
         <Paragraph>
           Nous partageons les mêmes valeurs autour de la solidarité, la défense
@@ -167,17 +165,19 @@ const Page = ({ supporters }: SupportersProps) => {
           </div>
         </div>
         <div className="buttons">
-          {supporters.map((supporter, index) => (
-            <div className="button" key={supporter.fullName}>
-              <button
-                className={index === selectedSupporter ? "selected" : ""}
-                onClick={() => setSelectedSupporter(index)}
-                title={`Voir le message de soutien de ${supporter.fullName}`}
-              >
-                {supporter.fullName}
-              </button>
-            </div>
-          ))}
+          {supporters
+            .filter(({ vip }) => vip)
+            .map((supporter, index) => (
+              <div className="button" key={supporter.fullName}>
+                <button
+                  className={index === selectedSupporter ? "selected" : ""}
+                  onClick={() => setSelectedSupporter(index)}
+                  title={`Voir le message de soutien de ${supporter.fullName}`}
+                >
+                  {supporter.fullName}
+                </button>
+              </div>
+            ))}
         </div>
       </div>
       <style jsx>{`
@@ -279,7 +279,7 @@ const Page = ({ supporters }: SupportersProps) => {
 };
 
 export const getStaticProps: GetStaticProps<SupportersProps> = async () => {
-  return await baseGetStaticProps({ limit: 10, vipOnly: true });
+  return await baseGetStaticProps();
 };
 
 export default Page;

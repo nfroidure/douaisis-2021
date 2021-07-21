@@ -7,9 +7,9 @@ import Strong from "../../components/strong";
 import Anchor from "../../components/a";
 import { getStaticProps as baseGetStaticProps } from ".";
 import { mapNodesToElements } from "../../utils/contentful";
+import { publicRuntimeConfig } from "../../utils/config";
 import type { Candidate } from ".";
 import type { GetStaticProps, GetStaticPaths } from "next";
-import { publicRuntimeConfig } from "../../utils/config";
 
 type Params = {
   id: string;
@@ -42,7 +42,7 @@ const StaticPropsDetail = ({ candidate }: Props) => {
         </Paragraph>
         <Paragraph className="photo">
           <img
-            src={"https:" + candidate.photo.href}
+            src={`${publicRuntimeConfig.buildPrefix}/${candidate.photo.href}`}
             alt={candidate.photo.alt}
             width={167}
             height={250}
